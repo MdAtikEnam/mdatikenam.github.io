@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link href="style/my.css" rel="stylesheet" type="text/css" />
+
+	<title>Md. Atik Enam</title>
+	<script>
+	function copy(dest, source) {
+  		if(dest.source == source) {
+  		  dest.innerHTML = "";
+  		  dest.source = null;
+  		}
+  		else {
+  		  dest.innerHTML = source.innerHTML;
+  		  dest.source = source;
+  		}
+  		dest.blur();
+	}
+	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#includepubs").load("publication.html");
+        $("#includenavbar").load("navigation.html");
+        $("#includeresearch").load("research.html");
+    });
+    </script>
+</head>
+
+<body>
+
+    <div id="includenavbar"></div>
+
+    <div style="width: 60%; padding-top: 80px" class="container">
+        <div class="row">
+
+            <div style="padding-left: 4%!important;" class="col-sm-9">
+                <div class="row">
+					<ul class="list-inline">
+					  <li class="list-inline-item align-top"><span style="font-size: 40px; font-weight: bolder">Md. Atik</span><span style="font-size: 40px;"> Enam</span></li>
+                        <br><li class="list-inline-item align-top"><i class="fa fa-envelope" style="font-size:15px"></i> menam[at]clemson[dot]edu</li><br>
+                        <!--<li class="list-inline-item align-top">  [<a href="docs/cv/CV_april_22.pdf">CV</a>] -->
+                        [<a href="https://scholar.google.com/citations?hl=en&user=K-isjagAAAAJ&view_op=list_works&sortby=pubdate"><font size="3">Google Scholar</font></a>]
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <p>
+                        I am a PhD student at <a href="https://www.clemson.edu/">
+                        Clemson University</a> where I am working as a Graduate Research Assistant (RA) under the supervision of <a href="http://drjulianbrinkley.com/">
+                        Dr. Julian Brinkley</a> in his <a href="http://drivelab.org/">
+                        D.R.I.V.E.</a> lab. I received my bachelor’s degree in Computer Science and Engineering (CSE) from
+                        <a href="https://www.buet.ac.bd/web/">Bangladesh University of Engineering and Technology (BUET)</a>,
+                        where I was fortunate enough to be advised by <a href="https://cse.buet.ac.bd/faculty/facdetail.php?id=saidurrahman">
+                        Dr. Md. Saidur Rahman</a>.
+                    </p>
+
+                    <p>
+                        My research interests focus on assistive Human-Machine Interface (HMI) design, designing experiments
+                        to analyze effects of human factors, user-experience (UX) analysis using both qualitative and quantitative methods.
+                    </p>
+                </div>
+
+                </hr>
+
+                <div class="row">
+                    <p>
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div style="padding: 0%; padding-right: 2%; !important;" class="col-sm-3">
+                <img class="center-block img img-responsive " src="figures/atik2017.jpg"  width="80%" border="0" height="80%" style="width:300px; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);">
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="row mt-3">
+            <h3>Publications</h3>
+        </div>
+        <div style="padding-left: 2.5%!important;" class="row mt-3">
+            <div id="includepubs"></div>
+        </div>
+
+        <hr/>
+
+    </div>
+
+</body>
